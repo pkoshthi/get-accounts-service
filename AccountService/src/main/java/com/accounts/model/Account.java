@@ -19,9 +19,9 @@ public class Account {
 	
 	//defining accounttype as column name
 	@Column
-	private String accounttype;
+	private String accountType;
 	
-	//defining isActive as column name
+	//defining isActive as column namess
 	@Column
 	private boolean isActive;
 	
@@ -32,16 +32,7 @@ public class Account {
 	//defining customerId as column name
 	@Column
 	private int customerId;
-	
-	public Account(int accountNumber, String accounttype, boolean isActive, double balance, int customerId) {
-		super();
-		this.accountNumber = accountNumber;
-		this.accounttype = accounttype;
-		this.isActive = isActive;
-		this.balance = balance;
-		this.customerId = customerId;
-	}
-	
+		
 	//defining getter and setter methods
 
 	public int getAccountNumber() {
@@ -52,12 +43,12 @@ public class Account {
 		this.accountNumber = accountNumber;
 	}
 
-	public String getAccounttype() {
-		return accounttype;
+	public String getAccountType() {
+		return accountType;
 	}
 
-	public void setAccounttype(String accounttype) {
-		this.accounttype = accounttype;
+	public void setAccountType(String accountType) {
+		this.accountType = accountType;
 	}
 
 	public boolean isActive() {

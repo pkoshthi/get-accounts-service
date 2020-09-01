@@ -25,18 +25,4 @@ public class AccountService {
 													    });
 		return accounts;
 	}
-
-/*
-	//saving an account detail
-	public void saveOrUpdate(Account account)
-	{
-		accountRepository.save(account);
-	}
-	
-	//deleting a specific account detail
-	public void delete(int accountNumber)
-	{
-		accountRepository.deleteById(accountNumber);
-	}
-*/
 }
