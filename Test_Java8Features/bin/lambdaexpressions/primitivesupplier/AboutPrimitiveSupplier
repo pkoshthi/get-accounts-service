@@ -1,0 +1,9 @@
+Primitive types for Supplier
+-----------------------------
+BooleanSupplier --> boolean getAsBoolean();
+
+IntSupplier --> int getAsInt();
+
+LongSupplier --> long getAsLong();
+
+DoubleSupplier --> double getAsDoubleSupplier();

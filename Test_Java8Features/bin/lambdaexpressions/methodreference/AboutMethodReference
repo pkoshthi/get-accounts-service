@@ -1,0 +1,6 @@
+
+In case of method reference different return types are allowed.
+But only restriction argument types must be matched.
+
+classname::method name
+object reference::method name

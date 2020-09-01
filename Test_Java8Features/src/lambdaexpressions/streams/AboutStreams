@@ -1,0 +1,52 @@
+Streams :
+----------
+
+If we want to represent a group of objects as a single entity, then we should go for collection.
+
+If we want to process objects from the collection -> Streams
+Stream s = c.stream();
+java.util.stream package
+
+filter(Predicate)
+map(Function)
+
+
+filter:
+--------
+input-->10 elements
+output--> o to 10 or <=10
+
+map:
+------
+input-->10 elements
+output-->10 elements
+
+
+stream()
+filter()
+map()
+collect()
+count()
+forEach()
+toArray() --> To convert stream of objects into an array
+sorted() --> By default natural sorting order
+sorted(Comparator) --> Customized sorting
+
+
+
+(s1,s2)->s1.compareTo(s2) ====> Natural sorting order
+(s1,s2)->s2.compareTo(s1) ====> Reverse of natural sorting order
+(s1,s2)->-s1.compareTo(s2)====> Reverse of natural sorting order
+
+
+
+
+
+
+
+
+
+
+
+
+

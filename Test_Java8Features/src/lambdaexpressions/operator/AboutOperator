@@ -1,0 +1,25 @@
+
+
+Function level operators --> One input, One output
+(1) UnaryOperator<T>
+If input and output are same type,then we should go for unary operator
+
+It is child of Function<T,R>
+
+(2) IntUnaryOperator
+If input and output are same type and don't want to mention Integer data type as generic, then we should go for
+IntUnaryOperator
+
+-------------------
+BiFunction level operators --> 2 input and one output
+
+(3)BinaryOperator<T>  --> public T apply(T,T);
+If 2 inputs and  1 output are same type,then we should go for BinaryOperator. It restricts Generic type
+to only one(Since all inputs and output are of same type)
+
+It is child of BiFunction<T,T,R>
+
+Primitive types of binary operator
+(4)IntBinaryOperator
+(5)LongBinaryOperator
+(6)DoubleBinaryOperator

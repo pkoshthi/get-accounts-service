@@ -1,0 +1,22 @@
+Primitive types of Consumer :
+-------------------------------
+
+IntConsumer
+void accept(int value) --> Performs this operation on given integer argument.
+
+LongConsumer
+void accept(long value) --> Performs this operation on given long argument.
+
+DoubleConsumer
+void accept(double value --> Performs this operation on given double argument.
+
+--------------
+
+ObjDoubleConsumer<T>
+void accept(T t,double value)
+
+ObjIntConsumer<T>
+void accept(T t,int value)
+
+ObjLongConsumer<T>
+void accept(T t,long value)

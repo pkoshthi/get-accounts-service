@@ -1,0 +1,72 @@
+Primitive Function types:
+--------------------------
+
+DoubleFunction: Can take input type as double and return type can be any type.
+
+IntFunction: Can take input type as int and return type can be any type.
+
+LongFunction: Can take input type as long and return type can be any type.
+
+------
+
+DoubleToIntFunction : input type-->double , return type-->int
+In this case apply method is as ==> int applyAsInt(double value);
+
+DoubleToLongFunction : input type --> double, return type --> long
+In this case apply method is as ==> long applyAsLong(double value);
+
+IntToDoubleFunction : input type --> int, return type --> double
+double applyAsDouble(int value);
+
+IntToLongFunction : input type --> int, return type --> long
+long applyAsLong(int value);
+
+LongToIntFunction : input type --> long, return type --> int
+int applyAsInt(long value);
+
+LongToDoubleFunction : input type --> long, return type --> double
+double applyAsDouble(long value);
+
+-------
+
+ToIntFunction : Input type can be any type, return type is int
+int applyAsInt(T value);
+
+ToLongFunction : Input type can be any type, return type is long
+long applyAsLong(T value);
+
+ToDoubleFunction : Input type can be any type, return type is double
+double applyAsDouble(T value);
+
+--------
+
+ToIntBiFunction : Return type must be of int type, input arguments can be of any type
+int applyAsInt(T t,U u);
+
+ToLongBiFunction : Return type must be of long type, input arguments can be of any type
+long applyAsLong(T t,U u);
+
+ToDoubleBiFunction : Return type must be of double type, input arguments can be of any type
+double applyAsDouble(T t,U u);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
