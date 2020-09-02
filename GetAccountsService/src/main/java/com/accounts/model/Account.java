@@ -17,11 +17,11 @@ public class Account {
 	@Column
 	private int accountNumber;
 	
-	//defining accounttype as column name
+	//defining accountType as column name
 	@Column
 	private String accountType;
 	
-	//defining isActive as column namess
+	//defining isActive as column name
 	@Column
 	private boolean isActive;
 	

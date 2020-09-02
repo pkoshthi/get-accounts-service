@@ -17,7 +17,7 @@ public class AccountController {
 	//autowired the AccountService class
 	@Autowired
 	AccountService accountService;
-	
+		
 	//creating a get mapping that retrieves all the accounts detail of customer from the database 
 	@GetMapping("/account/{customerId}")
 	private List<Account> getAllAccount(@PathVariable("customerId") int customerId)

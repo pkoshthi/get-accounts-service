@@ -1,5 +1,5 @@
 
-(1) Run the AccountService as "Spring Boot App" in STS. Ensure that the application is running on default Tomcat port 8080 by seeing the console.
+(1) Run the GetAccountsService as "Spring Boot App" in STS. Ensure that the application is running on default Tomcat port 8080 by seeing the console.
 
 (2)	Access h2-console in browser using the below URL
 	http://localhost:8080/h2-console
