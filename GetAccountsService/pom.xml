@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.accounts</groupId>
-	<artifactId>AccountService</artifactId>
+	<artifactId>GetAccountsService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>AccountService</name>
+	<name>GetAccountsService</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

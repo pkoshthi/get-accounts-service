@@ -29,7 +29,7 @@
 	INSERT INTO Account VALUES(1006,'Recurring Deposits',500.00,202,0);
 	
 	
-(3)	Hit the AccountService end point in browser as below. Here -->201 and 202 are the customer Ids.
+(3)	Hit the GetAccountsService end point in browser as below. Here -->201 and 202 are the customer Ids.
 	http://localhost:8080/account/201
 	http://localhost:8080/account/202
 
