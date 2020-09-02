@@ -1,6 +1,6 @@
 package com.accounts.controller;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.List;
 
@@ -32,7 +32,6 @@ public class AccountControllerTests {
 		ResponseEntity<List<Account>> response = restTemplate.exchange("http://localhost:" + port + "/account/201",
 				HttpMethod.GET, null, new ParameterizedTypeReference<List<Account>>() {
 				});
-		System.out.println("response :\n" + response);
 		assertEquals(HttpStatus.OK, response.getStatusCode());
 	}
 
