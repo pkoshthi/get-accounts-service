@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.accounts.model.Account;
 import com.accounts.service.AccountService;
+import com.accounts.exception.RecordNotFoundException;
 
 //Creating a rest controller
 @RestController
@@ -20,9 +21,15 @@ public class AccountController {
 		
 	//creating a get mapping that retrieves all the accounts detail of customer from the database 
 	@GetMapping("/account/{customerId}")
-	private List<Account> getAllAccount(@PathVariable("customerId") int customerId)
+	private List<Account> getAllAccount(@PathVariable("customerId") int customerId) 
 	{
-		return accountService.getAllAccount(customerId);
+		List<Account> accounts =  accountService.getAllAccount(customerId);
+		if(accounts.isEmpty())
+		{
+			throw new RecordNotFoundException("Customer id '" + customerId + "' does not exist");
+		}
+		
+		return accounts;
 	}
 	
 }
